@@ -18,7 +18,6 @@ export const AuthProvider = ({ children }) => {
   const login = (email, password) => {
     setLoading(true)
     
-    // Simuler un délai de chargement
     setTimeout(() => {
       const foundUser = employees.find(emp => 
         emp.email === email && emp.password === password
@@ -39,7 +38,6 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('user')
   }
 
-  // Vérifier si l'utilisateur est déjà connecté au chargement
   React.useEffect(() => {
     const savedUser = localStorage.getItem('user')
     if (savedUser) {
