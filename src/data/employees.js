@@ -48,31 +48,3 @@ export const employees = [
     permissions: ["projets", "equipe", "rapports"]
   }
 ]
-
-export const fichesPaie = [
-  {
-    id: 1,
-    employeeId: 1,
-    mois: "2024-01",
-    salaireBase: 450000,
-    primeAnciennete: 75000,
-    primeResponsabilite: 50000,
-    totalBrut: 575000,
-    cnac: 28750,
-    impot: 86250,
-    totalNet: 460000,
-    statut: "payé"
-  },
-  {
-    id: 2,
-    employeeId: 2,
-    mois: "2024-01",
-    salaireBase: 280000,
-    primeAnciennete: 28000,
-    totalBrut: 308000,
-    cnac: 15400,
-    impot: 46200,
-    totalNet: 246400,
-    statut: "payé"
-  }
-]
