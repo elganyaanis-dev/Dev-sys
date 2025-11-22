@@ -4,9 +4,7 @@ const AuthContext = createContext()
 
 export const useAuth = () => {
   const context = useContext(AuthContext)
-  if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider')
-  }
+  if (!context) throw new Error('useAuth must be used within AuthProvider')
   return context
 }
 
@@ -36,15 +34,8 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('erp_user')
   }
 
-  const value = {
-    user,
-    login,
-    logout,
-    loading
-  }
-
   return (
-    <AuthContext.Provider value={value}>
+    <AuthContext.Provider value={{ user, login, logout, loading }}>
       {children}
     </AuthContext.Provider>
   )
