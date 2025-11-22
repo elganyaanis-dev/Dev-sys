@@ -164,7 +164,7 @@ const GestionProjets = () => {
                         color: 
                           project.statut === 'actif' ? '#155724' :
                           project.statut === 'planification' ? '#856404' :
-                          project.statut === 'termine' : '#0c5460' : '#383d41'
+                          project.statut === 'termine' ? '#0c5460' : '#383d41'
                       }}>
                         {project.statut}
                       </span>
