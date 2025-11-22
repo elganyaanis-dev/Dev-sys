@@ -13,26 +13,25 @@ function App() {
         🚆 Rail Electr ERP
       </h1>
       <p style={{ fontSize: '1.2rem', color: '#666' }}>
-        Application en cours de chargement...
+        ✅ Reconstruction étape par étape
       </p>
       <div style={{ marginTop: '30px' }}>
         <button style={{ 
           padding: '12px 24px', 
-          backgroundColor: '#1890ff', 
+          backgroundColor: '#52c41a', 
           color: 'white',
           border: 'none',
           borderRadius: '8px',
           fontSize: '1rem'
         }}>
-          Test Réussi ✅
+          Étape 1: Base ✅
         </button>
       </div>
       <div style={{ marginTop: '20px', color: '#888' }}>
-        Version: {new Date().toLocaleDateString()}
+        Prochaine étape: Authentification
       </div>
     </div>
   );
 }
 
 export default App;
-
